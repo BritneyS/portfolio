@@ -1,10 +1,25 @@
 :root {
-    --main-text-font: font-family: "Cutive Mono", monospace;
+    --main-text-font: "Cutive Mono", monospace;
+    --main-bg-color: #343A40;
+    --main-text-color: #F8F8FF;
+    --disabled-content-color: #555555;
+}
+
+body, .card-custom {
+    background-color: var(--main-bg-color);
+    font-family: var(--main-text-font);
+    color: var(--main-text-color);
 
 }
 
-body.wrapper {
-    font-family: var(--main-text-font);
+.card-custom {
+    height: 25rem;
+}
+
+.disabled-btn-custom {
+    pointer-events: none;
+    background-color: var(--disabled-content-color);
+    border-color: var(--disabled-content-color)
 }
 
 .nav-item.nav-link.col-3 {
@@ -13,10 +28,4 @@ body.wrapper {
 
 .navbar-nav>a {
     display: inline-block;
-}
-
-h1,
-.navbar-brand,
-.navbar-nav a {
-  font-family: "Cutive Mono", monospace;
 }
