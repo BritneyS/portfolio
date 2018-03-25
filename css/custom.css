@@ -1,0 +1,22 @@
+:root {
+    --main-text-font: font-family: "Cutive Mono", monospace;
+
+}
+
+body.wrapper {
+    font-family: var(--main-text-font);
+}
+
+.nav-item.nav-link.col-3 {
+    width: auto;
+}
+
+.navbar-nav>a {
+    display: inline-block;
+}
+
+h1,
+.navbar-brand,
+.navbar-nav a {
+  font-family: "Cutive Mono", monospace;
+}
